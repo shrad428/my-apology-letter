@@ -1,70 +1,142 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>For You, My Love</title>
+  <title>For You, My Love 🤍</title>
+
   <style>
     body {
-      background-color: #fff5f8;
-      font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 30px;
+      margin: 0;
+      min-height: 100vh;
+      background: linear-gradient(120deg, #ffe4ec, #fff0f5);
+      font-family: "Arial", sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
     }
+
+    /* floating hearts */
+    body::before {
+      content: "❤ ❤ ❤ ❤ ❤ ❤ ❤";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      font-size: 80px;
+      opacity: 0.05;
+      animation: float 20s linear infinite;
+    }
+
+    @keyframes float {
+      from { transform: translateY(0); }
+      to { transform: translateY(-200px); }
+    }
+
+    .card {
+      background: rgba(255,255,255,0.6);
+      backdrop-filter: blur(15px);
+      padding: 45px;
+      border-radius: 30px;
+      max-width: 600px;
+      text-align: center;
+      box-shadow: 0 30px 60px rgba(255, 105, 180, 0.25);
+      animation: fadeIn 1.5s ease;
+      z-index: 1;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
     h1 {
       color: #c2185b;
+      margin-bottom: 20px;
     }
+
     p {
-      font-size: 18px;
-      line-height: 1.7;
-      color: #333;
-      max-width: 700px;
-      margin: auto;
+      color: #555;
+      line-height: 1.8;
+      font-size: 16px;
     }
+
+    .buttons {
+      margin-top: 30px;
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
     a {
-      display: inline-block;
-      margin: 15px;
-      padding: 10px 20px;
-      background-color: #c2185b;
-      color: white;
       text-decoration: none;
-      border-radius: 20px;
     }
-    a:hover {
-      background-color: #a3154d;
+
+    .btn {
+      background: linear-gradient(135deg, #ff5c8a, #ff85b3);
+      color: white;
+      padding: 12px 22px;
+      border-radius: 30px;
+      font-size: 15px;
+      box-shadow: 0 10px 20px rgba(255, 92, 138, 0.4);
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 14px 30px rgba(255, 92, 138, 0.6);
+    }
+
+    .pulse {
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(255,92,138,0.6); }
+      70% { box-shadow: 0 0 0 12px rgba(255,92,138,0); }
+      100% { box-shadow: 0 0 0 0 rgba(255,92,138,0); }
     }
   </style>
 </head>
 
 <body>
 
-<h1>Mutu Mayalu 🤍</h1>
+  <div class="card">
+    <h1>Mutu Mayalu 🤍</h1>
 
-<p>
-I know I’ve hurt you knowingly or unknowingly and I’m truly sorry.  
-That was never my intention, not even for a moment.
-</p>
+    <p>
+      I know I’ve hurt you multiple times knowingly or unknowingly and I’m ekdamai
+      guilty regretful and sorry for it. I know i can't go back in time and change
+      things but I have always tried my best to not mess things up. I never wanted
+      to hurt you in a slightest way. I have always tried my best to do things you
+      like but i keep on messing things up like a idiot.But trust me I always try my
+      best when it comes to you.
+    </p>
 
-<p>
-I loved you from the very start, and I still do  deeply, honestly, endlessly.  
-I don’t want anyone beside you. I don’t see a future where it isn’t you.
-</p>
+    <p>
+      I have loved you from the very start from the day of christmas I have loved you 
+      no matter in what form sometimes as a friend sometimes as a bestfriend sometime
+      like my bf my husband sometime like my child but one thing i never stopped was
+      loving you. Kaile kai hamro jhagda parera ma risauda tww i would feel like
+       am abandoning my child my baby.
+    </p>
 
-<p>
-I don’t know how else to prove my sincerity, so I’m pouring my effort, my heart,
-and my time into this hoping you’ll feel what I feel.
-</p>
+    <p>
+      If you tell me once, I’ll leave everything behind without a second thought
+      just to have you in my life. I will give you so much love you'd forget who
+      didn't loved you vanera. You are my baby and no matter if i would have kids
+      or not you will always be my first baby.
+    </p>
 
-<p>
-If you tell me once, I’ll leave everything behind without a second thought  
-just to have you in my life.
-</p>
+    <p>
+      I love you more than words can ever hold and more than it was meant to be exsited.
+    </p>
 
-<p>
-I love you more than words can ever hold.
-</p>
-
-<a href="memories.html">💞 Our Memories</a>
-<a href="secrets.html">🔒 Secret Messages</a>
-<a href="waiting.html">⏳ I’m Waiting</a>
+    <div class="buttons">
+      <a href="memories.html" class="btn">💞 Our Memories</a>
+      <a href="secrets.html" class="btn pulse">🔒 Secret Messages</a>
+      <a href="waiting.html" class="btn">⏳ I’m Waiting</a>
+    </div>
+  </div>
 
 </body>
 </html>
